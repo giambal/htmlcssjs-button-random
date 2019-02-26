@@ -7,13 +7,24 @@ function getRandom(min, max) {
 
 
 function clickButt(){
+var element=document.getElementById('box');
 
   var rndNum=getRandom(0,100);
-  alert(rndNum);
+  if (rndNum%2==0) {
+
+    element.innerHTML += "numero generato" + " " + rndNum + "," + " "  ;
+    element.style.color="red";
+    element.style.background="black"
+
+  }else {
+    element.innerHTML += "numero generato" + " " + rndNum + "," + " "  ;
+    element.style.color="black";
+    element.style.background="red"
+  }
 }
 
 
 
 
 var element=document.getElementById('butt');
-element.addEventListner("click" , clickButt);
+element.addEventListener("click" , clickButt);

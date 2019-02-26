@@ -3,8 +3,9 @@
   height: 100px;
 }
 
-.box{
-  width: 100px;
-  height: 100px;
+#box{
+  width: 800px;
+  height: 500px;
   font-size: 25px;
+  border: 1px solid black;
 }
